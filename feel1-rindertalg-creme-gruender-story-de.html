@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feel1 Rindertalg Creme – Warum ich dieses Produkt entwickelt habe</title>
+  <meta name="description" content="Willst du ein natürliches, giftfreies All-in-One-Pflegeprodukt, das all deine teuren Cremes & Seren ersetzt? Genau dafür wurde Feel1 entwickelt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --serif:        'Playfair Display', Georgia, serif;
+      --sans:         'Figtree', system-ui, sans-serif;
+      --ink:          #1A1915;
+      --ink-mid:      #4A4640;
+      --ink-muted:    #7A7268;
+      --paper:        #FAF7F2;
+      --paper-warm:   #F3EDE4;
+      --border:       #D8D0C6;
+      --border-light: #E8E2D8;
+      --accent:       #6B3A2A;
+      --gold-star:    #C8960A;
+      --white:        #FFFFFF;
+      --radius:       4px;
+    }
+
+    html  { scroll-behavior: smooth; }
+    body  { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.7; font-size: 17px; }
+    a     { text-decoration: none; color: inherit; }
+    img   { max-width: 100%; display: block; height: auto; }
+
+    /* ── MASTHEAD ── */
+    header {
+      background: var(--paper);
+      border-bottom: 2px solid var(--ink);
+    }
+    .masthead {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .masthead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0 8px;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .masthead-logo {
+      padding: 16px 0 14px;
+      text-align: center;
+    }
+    .masthead-logo img { height: 30px; width: auto; display: inline-block; }
+    .masthead-tagline {
+      text-align: center;
+      padding: 8px 0 12px;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── ARTICLE HEADER (2-col hero) ── */
+    .article-header {
+      padding: 52px 40px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 56px;
+      align-items: center;
+    }
+    .article-header-text { min-width: 0; }
+    .article-category {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    .article-headline {
+      font-family: var(--sans);
+      font-size: clamp(1.7rem, 3vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.14;
+      color: var(--ink);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+    .article-deck {
+      font-size: 1.05rem;
+      color: var(--ink-mid);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      font-style: italic;
+      font-family: var(--sans);
+    }
+    .article-byline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.02em;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+    .byline-dot { color: var(--border); }
+    .byline-stars { color: var(--gold-star); letter-spacing: 2px; }
+
+    /* ── HERO IMAGE (inside header) ── */
+    .article-header-image { min-width: 0; }
+    .article-header-image img {
+      width: 100%;
+      border-radius: var(--radius);
+      display: block;
+    }
+    .image-caption {
+      font-size: 0.75rem;
+      color: var(--ink-muted);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* ── TRUST STRIP ── */
+    .trust-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--paper-warm);
+      padding: 12px 40px;
+      margin-top: 32px;
+    }
+    .trust-items {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.76rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      font-weight: 600;
+    }
+    .trust-items .dot { color: var(--border); }
+
+    /* ── SHARED CONTAINER ── */
+    .container { max-width: 760px; margin: 0 auto; padding: 0 40px; }
+
+    /* ── SECTION LABEL ── */
+    .section-rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .section-rule::before,
+    .section-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--ink-muted);
+      white-space: nowrap;
+    }
+
+    /* ── FOUNDER STORY ── */
+    .founder-section { padding: 60px 0; }
+    .founder-quote {
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding: 28px 0;
+      margin-bottom: 44px;
+    }
+    .founder-quote p {
+      font-family: var(--sans);
+      font-size: 1.22rem;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .founder-quote cite {
+      display: block;
+      font-style: normal;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+      margin-top: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .founder-body p {
+      margin-bottom: 20px;
+      font-size: 1.02rem;
+      line-height: 1.82;
+      color: var(--ink-mid);
+    }
+    .founder-body p strong { color: var(--ink); font-weight: 700; }
+    .founder-body p:last-child { margin-bottom: 0; }
+
+    /* ── BENEFITS ── */
+    .benefits-section {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 40px;
+      background: var(--white);
+    }
+    .benefits-inner { max-width: 900px; margin: 0 auto; }
+    .section-title {
+      font-family: var(--sans);
+      font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 52px;
+      color: var(--ink);
+      line-height: 1.3;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .benefit-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: center;
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .benefit-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .benefit-item.flip .benefit-text { order: 2; }
+    .benefit-item.flip .benefit-img   { order: 1; }
+
+    .benefit-num {
+      font-family: var(--sans);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .benefit-heading {
+      font-family: var(--sans);
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .benefit-body {
+      font-size: 0.97rem;
+      color: var(--ink-mid);
+      line-height: 1.82;
+    }
+    .benefit-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .benefit-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* ── ROUTINE ── */
+    .routine-section { padding: 60px 0; }
+    .routine-steps { list-style: none; margin-top: 4px; }
+    .routine-step {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .routine-step:last-child { border-bottom: none; }
+    .step-num {
+      font-family: var(--sans);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--border);
+      line-height: 1;
+      padding-top: 2px;
+    }
+    .step-body h3 {
+      font-family: var(--sans);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    .step-body p  { font-size: 0.97rem; color: var(--ink-mid); line-height: 1.8; }
+    .tip {
+      display: inline-block;
+      font-size: 0.84rem;
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .urgency-box {
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin-top: 48px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--paper-warm);
+    }
+    .urgency-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .urgency-body h4 {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+    .urgency-body p { font-size: 0.93rem; color: var(--ink-mid); line-height: 1.7; }
+
+    /* ── FINAL CTA ── */
+    .cta-section {
+      padding: 60px 40px;
+      border-top: 1px solid var(--border);
+    }
+    .cta-box {
+      max-width: 620px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--ink);
+      padding: 44px 48px;
+      text-align: center;
+      background: var(--white);
+    }
+    .cta-eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-muted);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .cta-headline {
+      font-family: var(--sans);
+      font-size: clamp(1.4rem, 2.8vw, 2rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+    .cta-price {
+      font-size: 0.95rem;
+      color: var(--ink-muted);
+      margin-bottom: 32px;
+    }
+    .cta-price strong { color: var(--ink); font-size: 1.3rem; font-weight: 700; }
+    .cta-price del { text-decoration: line-through; }
+    .main-cta {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--paper);
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 15px 36px;
+      border-radius: var(--radius);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .main-cta:hover { background: var(--accent); }
+    .cta-guarantee { margin-top: 16px; font-size: 0.8rem; color: var(--ink-muted); font-style: italic; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--paper-warm);
+      border-top: 2px solid var(--ink);
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      line-height: 1.9;
+    }
+    footer a { color: var(--ink-mid); text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .masthead { padding: 0 20px; }
+      .masthead-top { flex-direction: column; gap: 4px; text-align: center; }
+      .article-header { padding: 36px 24px 28px; }
+      .article-header-inner { grid-template-columns: 1fr; gap: 28px; }
+      .article-header-image { order: -1; }
+      .trust-strip { padding: 12px 24px; }
+      .container { padding: 0 24px; }
+      .benefits-section { padding: 48px 24px; }
+      .benefit-item { grid-template-columns: 1fr; gap: 20px; }
+      .benefit-item.flip .benefit-text { order: 1; }
+      .benefit-item.flip .benefit-img   { order: 2; }
+      .cta-section { padding: 44px 24px; }
+      .cta-box { padding: 32px 24px; }
+      footer { padding: 24px; }
+      .founder-body p:first-child::first-letter { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── MASTHEAD ── -->
+<header>
+  <div class="masthead">
+    <div class="masthead-logo">
+      <img src="https://img.funnelish.com/5973/869783/1753174619-Feel1_LOGO.svg" alt="Feel1" />
+    </div>
+  </div>
+</header>
+
+<!-- ── ARTICLE HEADER ── -->
+<section class="article-header">
+  <div class="article-header-inner">
+
+    <div class="article-header-text">
+      <p class="article-category">Gründergeschichte · Produktbericht</p>
+
+      <h1 class="article-headline">
+        Willst du ein natürliches, giftfreies All-in-One-Pflegeprodukt, das all deine teuren Cremes &amp; Seren ersetzt?
+      </h1>
+
+      <p class="article-deck">
+        Lerne die Feel1 Rindertalg Creme kennen: das einzigartige Naturkraftwerk
+        aus bio-verfügbaren Inhaltsstoffen, die deine Haut wirklich versteht –
+        entwickelt in Deutschland, für echte Männer.
+      </p>
+
+      <div class="article-byline">
+        <span>Das Feel1-Gründerteam</span>
+        <span class="byline-dot">·</span>
+        <span>1. April 2026</span>
+        <span class="byline-dot">·</span>
+        <span class="byline-stars">★★★★★</span>
+        <span style="color:var(--ink-muted)">4,8 · 237+ Bewertungen</span>
+      </div>
+    </div>
+
+    <div class="article-header-image">
+      <img src="img/founder-de/hero.jpg" alt="Feel1 Rindertalg Creme für Männer" />
+      <p class="image-caption">Feel1 Rindertalg Creme — entwickelt in Deutschland aus natürlichen Inhaltsstoffen.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust-strip">
+  <div class="trust-items">
+    <span>30 Tage Geld-zurück-Garantie</span>
+    <span class="dot">·</span>
+    <span>Entwickelt in Deutschland</span>
+    <span class="dot">·</span>
+    <span>Dermatologisch getestet</span>
+    <span class="dot">·</span>
+    <span>100% natürliche Inhaltsstoffe</span>
+    <span class="dot">·</span>
+    <span>Tierversuchsfrei</span>
+  </div>
+</div>
+
+<!-- ── FOUNDER / BRAND STORY ── -->
+<section class="founder-section">
+  <div class="container">
+
+    <div class="section-rule">
+      <span class="section-label">Die Gründergeschichte</span>
+    </div>
+
+    <blockquote class="founder-quote">
+      <p>„Feel1 ist nicht einfach eine weitere Rindertalg-Marke. Wir stehen für Wahrheit
+      und Transparenz – und dafür, Produkte herzustellen, die deinen Körper wirklich
+      unterstützen. Gegen Konzerne anzukämpfen, die dir toxische Synthetics verkaufen,
+      ist unser Antrieb. Wir machen Hautpflege, die wir selbst jeden Tag benutzen."</p>
+      <cite>— Das Feel1-Gründerteam</cite>
+    </blockquote>
+
+    <div class="founder-body">
+      <p>
+        Es ist wie ein Auto mit dem falschen Kraftstoff betanken – es funktioniert einfach nicht.
+      </p>
+      <p>
+        Seit 50 Jahren verkaufen dir Kosmetikkonzerne synthetische Inhaltsstoffe,
+        die deine Haut buchstäblich nicht aufnehmen kann.
+      </p>
+      <p>
+        Deshalb bringt nichts wirklich etwas – egal wie viel du ausgibst.
+      </p>
+      <p>
+        Dabei hatte deine Großmutter die Antwort längst:
+      </p>
+      <p>
+        <strong>Grasgefütterter Rindertalg.</strong>
+      </p>
+      <p>
+        Er ist den natürlichen Ölen deiner Haut molekular so ähnlich, dass er vollständig
+        aufgenommen wird. Deshalb hatten Männer in den 1940er-Jahren mit 60 noch
+        straffe, gesunde Haut – ohne ein einziges synthetisches Produkt.
+      </p>
+      <p>
+        Warum verschwand Rindertalg dann?
+      </p>
+      <p>
+        Weil man ihn nicht patentieren kann.
+      </p>
+      <p>
+        Auf einem Inhaltsstoff, den jeder herstellen kann, lässt sich kein Milliardenkonzern aufbauen.
+        Und wenn ein Produkt die Haut wirklich heilt, hört der Kunde auf zu kaufen.
+        Ein geheilter Kunde ist ein verlorener Kunde.
+      </p>
+      <p>
+        Also ersetzte die Industrie ab den 1970er-Jahren Rindertalg durch patentierte Synthetics.
+        Sie erfanden 10-Schritte-Routinen. Sie entwickelten Produkte, die nur 2 Stunden
+        wirken – damit du immer wieder nachkaufst.
+      </p>
+      <p>
+        Feel1 dreht das um. Unsere Rindertalg Creme aus grasgefüttertem Rindertalg,
+        Bio-Jojobaöl, Sheabutter und Naturhonig ist das Ergebnis monatelanger Entwicklungsarbeit –
+        dermatologisch getestet, ohne Kompromisse.
+      </p>
+      <p>
+        Hier sind 11 Gründe, warum Männer auf Feel1 schwören. Und warum die
+        Kosmetikindustrie hofft, dass du das nie herausfindest.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── 11 BENEFITS ── -->
+<section class="benefits-section">
+  <div class="benefits-inner">
+
+    <div class="section-rule" style="margin-bottom:28px;">
+      <span class="section-label">11 Gründe</span>
+    </div>
+    <h2 class="section-title">Warum wir Feel1 entwickelt haben – und warum die Kosmetikindustrie hofft, dass du das nie herausfindest</h2>
+
+    <!-- 1 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">1</div>
+        <h3 class="benefit-heading">Es ersetzt gleich mehrere Produkte</h3>
+        <p class="benefit-body">
+          Nutze Feel1 als Feuchtigkeitscreme, After-Shave-Balsam, Augenpflege und Lippenpflege –
+          alles in einem einzigen Tiegel. Ein Tiegel reicht für Gesicht, Lippen und trockene
+          Stellen an Händen und Ellbogen. Deine Routine wird einfacher – und die Ergebnisse
+          werden besser.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-1.jpg" alt="Benefit 1" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="benefit-item flip">
+      <div class="benefit-text">
+        <div class="benefit-num">2</div>
+        <h3 class="benefit-heading">Es reduziert sichtbar Falten &amp; feine Linien</h3>
+        <p class="benefit-body">
+          Trage eine dünne Schicht auf Wangen, Lachfalten, Hals und Augenpartie auf.
+          Mit zunehmendem Alter produziert die Haut immer weniger ihrer eigenen Schutzöle.
+          Feel1 ersetzt diese – mit denselben Fettarten, die deine Haut von Natur aus kennt.
+          Feine Linien wirken weicher, Haut straffer.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-2.jpg" alt="Benefit 2" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">3</div>
+        <h3 class="benefit-heading">Strahlende, glatte und ebenmäßige Haut</h3>
+        <p class="benefit-body">
+          Strahlende Haut. Perfekter Teint – ohne Make-up. Weniger raue Textur.
+          Kein trockenes Gefühl mehr rund ums Auge oder an den Armen.
+          Naturhonig wirkt als natürlicher Zellerneuerer, Sheabutter glättet Unebenheiten.
+          Das Ergebnis erkennst du – und andere auch.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-3.jpg" alt="Benefit 3" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="benefit-item flip">
+      <div class="benefit-text">
+        <div class="benefit-num">4</div>
+        <h3 class="benefit-heading">Tiefe, anhaltende Feuchtigkeit</h3>
+        <p class="benefit-body">
+          Keine 2-Stunden-Wirkung und dann wieder von vorne. Bio-Jojobaöl hilft der Haut,
+          Feuchtigkeit wirklich zu speichern – nicht nur oberflächlich zu überdecken.
+          Besonders nach der Rasur oder nach Sport: kein Brennen, kein Straffen,
+          kein trockenes Ziehen.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-4.jpg" alt="Benefit 4" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">5</div>
+        <h3 class="benefit-heading">Hilft bei trockener Haut, Rötungen &amp; Reizungen</h3>
+        <p class="benefit-body">
+          Die entzündungshemmenden Eigenschaften von Rindertalg sind seit Jahrhunderten bekannt.
+          Feel1 legt eine schützende Schicht auf gereizte, schuppige Haut –
+          beruhigt Rötungen, lindert Spannungsgefühl und unterstützt die Heilung.
+          Auch bei empfindlicher Haut oder nach aggressiver Rasur.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-5.jpg" alt="Benefit 5" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="benefit-item flip">
+      <div class="benefit-text">
+        <div class="benefit-num">6</div>
+        <h3 class="benefit-heading">Es stärkt deine natürliche Hautbarriere</h3>
+        <p class="benefit-body">
+          Eine intakte Hautbarriere schützt vor Umwelteinflüssen, Bakterien und vorzeitiger Alterung.
+          Vitamin D und K in Rindertalg unterstützen genau diese Regeneration.
+          Feel1 repariert – statt wie die meisten Cremes nur zu überdecken, was kaputtgeht.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-6.jpg" alt="Benefit 6" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">7</div>
+        <h3 class="benefit-heading">Reich an Vitaminen A, D, E &amp; K – von Natur aus</h3>
+        <p class="benefit-body">
+          Das ist Ernährung für die Haut aus der Natur. Grasgefütterter Rindertalg liefert
+          fettlösliche Vitamine A, D, E und K sowie Fettsäuren, die deine Haut
+          bereits kennt und sofort nutzen kann. Keine synthetischen Zusätze.
+          Keine leeren Versprechen. Nur echte Wirkstoffe, die wirklich ankommen.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-7.jpg" alt="Benefit 7" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="benefit-item flip">
+      <div class="benefit-text">
+        <div class="benefit-num">8</div>
+        <h3 class="benefit-heading">Keine versteckten Chemikalien – du weißt genau, was drinsteckt</h3>
+        <p class="benefit-body">
+          Lies das Etikett – kein Buchstabensuppen-Kauderwelsch. Feel1 verzichtet auf
+          harte Synthetics, undurchsichtige Füllstoffe und künstliche Duftstoffe.
+          Die vollständige Zutatenliste: Grasgefütterter Rindertalg, Bio-Jojobaöl,
+          Sheabutter, Naturhonig. Das ist alles. Und das reicht.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-8.jpg" alt="Benefit 8" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">9</div>
+        <h3 class="benefit-heading">Dermatologisch getestet – auch für empfindliche Haut</h3>
+        <p class="benefit-body">
+          Feel1 ist nicht nur natürlich – es ist auch geprüft.
+          Die Formel wurde dermatologisch auf Hautverträglichkeit getestet.
+          Sicher für empfindliche Haut, sicher für den täglichen Einsatz –
+          ohne Kompromisse bei der Qualität.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-9.jpg" alt="Benefit 9" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="benefit-item flip">
+      <div class="benefit-text">
+        <div class="benefit-num">10</div>
+        <h3 class="benefit-heading">Biokompatibel, nicht klebrig &amp; geruchsneutral</h3>
+        <p class="benefit-body">
+          Deine Haut erkennt Rindertalg als körpereigen – er zieht vollständig ein,
+          ohne einen fettigen oder klebrigen Film zu hinterlassen. Und anders als viele
+          Naturprodukte: Feel1 ist komplett geruchsneutral. Kein aufdringlicher Eigengeruch,
+          kein künstliches Parfüm. Einfach saubere Pflege, die sich natürlich anfühlt.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-10.jpg" alt="Benefit 10" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <div class="benefit-num">11</div>
+        <h3 class="benefit-heading">Über 237 echte Bewertungen – 4,8 von 5 Sternen</h3>
+        <p class="benefit-body">
+          Echte Kunden, echte Ergebnisse: weichere Haut, weniger raue Stellen,
+          gleichmäßigerer Teint und ein natürliches Leuchten. Feel1 hat über 237
+          verifizierte Bewertungen gesammelt – nicht wegen Marketing,
+          sondern weil es funktioniert. Das ist die beste Empfehlung, die wir kennen.
+        </p>
+      </div>
+      <div class="benefit-img">
+        <img src="img/founder-de/benefit-11.jpg" alt="Benefit 11" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── ROUTINE GUIDE ── -->
+<section class="routine-section">
+  <div class="container">
+
+    <div class="section-rule">
+      <span class="section-label">Deine tägliche Routine</span>
+    </div>
+    <h2 class="section-title" style="text-align:left;margin-bottom:36px;">So startest du deine tägliche Feel1-Routine – noch heute</h2>
+
+    <ol class="routine-steps">
+
+      <li class="routine-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Das richtige Produkt wählen</h3>
+          <p>
+            Feel1 Rindertalg Creme für Männer gibt es aktuell nur direkt über
+            die offizielle Website – in limitierter Stückzahl pro Charge.
+            Da jede Charge handwerklich klein gehalten wird, um Frische und
+            Qualität zu garantieren, sind Phasen mit ausverkauftem Lager nicht ungewöhnlich.
+            Bestell am besten gleich mehrere Tiegel, wenn du auf Nummer sicher gehen willst.
+          </p>
+          <span class="tip">Tipp: Das 3er-Set ist am beliebtesten – und spart am meisten.</span>
+        </div>
+      </li>
+
+      <li class="routine-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Anwendung: Morgens, abends, nach der Rasur</h3>
+          <p>
+            Eine erbsengroße Menge reicht für das gesamte Gesicht.
+            Morgens nach der Reinigung für Schutz und Feuchtigkeit,
+            abends zur Regeneration über Nacht, und direkt nach der Rasur
+            als beruhigender Balsam – ohne Brennen, ohne Rötungen.
+            Der Tiegel reicht bei regelmäßiger Nutzung ca. 4–6 Wochen.
+          </p>
+          <span class="tip">Tipp: Auf leicht feuchter Haut aufgetragen zieht die Creme noch besser ein.</span>
+        </div>
+      </li>
+
+      <li class="routine-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Langfristige Nutzung: Wann du erste Ergebnisse siehst</h3>
+          <p>
+            Erste Veränderungen – weichere Haut, weniger Rötungen, ebenmäßigerer Teint –
+            berichten Nutzer typischerweise nach 2–4 Wochen.
+            Tiefere Wirkungen auf Falten und Hautstruktur zeigen sich meist nach
+            6–12 Wochen. Haut braucht Zeit zur Regeneration –
+            gib Feel1 die Chance, wirklich anzusetzen.
+          </p>
+          <span class="tip">Tipp: Auch als Geschenk für Väter, Partner oder Freunde beliebt.</span>
+        </div>
+      </li>
+
+    </ol>
+
+    <div class="urgency-box">
+      <div class="urgency-icon">⚠</div>
+      <div class="urgency-body">
+        <h4>Begrenzter Vorrat – aktuelle Charge fast ausverkauft</h4>
+        <p>
+          Feel1 produziert in kleinen, hochwertigen Chargen.
+          Aktuell ist die laufende Charge zu über 60% vergriffen.
+          Der aktuelle Aktionspreis von <strong>€24,99</strong> (statt €49,98) gilt nur
+          solange der Vorrat reicht. Sichere dir jetzt dein Exemplar –
+          bevor der Preis wieder steigt.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="cta-section">
+  <div class="cta-box">
+    <p class="cta-eyebrow">Jetzt bestellen · Versandkostenfrei ab €30</p>
+    <h2 class="cta-headline">
+      Bereit für eine Haut, in der du dich wieder wohlfühlst?
+    </h2>
+    <p class="cta-price">
+      Nur <strong>€24,99</strong> statt <del>€49,98</del> · 50% Rabatt · Inkl. 30 Tage Garantie
+    </p>
+    <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing" class="main-cta" target="_blank" rel="noopener">
+      Preis &amp; Verfügbarkeit prüfen →
+    </a>
+    <p class="cta-guarantee">30 Tage Geld-zurück-Garantie · Kein Risiko · Einfache Rücksendung</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>
+    Diese Seite wurde in Partnerschaft mit Feel1 erstellt.<br />
+    Individuelle Ergebnisse können variieren. Die hier gezeigten Erfahrungsberichte sind repräsentative Kundenstimmen.<br />
+    Die Angaben ersetzen keine medizinische Beratung.
+  </p>
+  <p style="margin-top: 10px;">
+    &copy; 2026 Feel1 ·
+    <a href="#">Datenschutz</a> ·
+    <a href="#">Impressum</a> ·
+    <a href="#">AGB</a>
+  </p>
+</footer>
+
+</body>
+</html>
