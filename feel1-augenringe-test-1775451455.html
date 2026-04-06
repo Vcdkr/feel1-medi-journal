@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mein Dermatologe hat meine Augenringe schlimmer gemacht – das hat wirklich geholfen | Medi-Journal</title>
+  <meta name="description" content="Ein Männergesundheitsspezialist enthüllt, warum teure Augenpflegecremes Tränensäcke und Augenringe verschlimmern – und was wirklich gegen alternde Männerhaut hilft." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cs-font-base-family: 'Inter', sans-serif;
+      --black: #0a0a0a;
+      --teal: #41af9b;
+      --teal-dark: #339988;
+      --teal-light: #e8f7f5;
+      --white: #ffffff;
+      --gray-50: #f8f9fb;
+      --gray-100: #f1f3f6;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-400: #9aa0ab;
+      --gray-600: #555b6a;
+      --gray-800: #2c2c2c;
+      --green: #2d7a4f;
+      --green-cta: #2e9e6b;
+      --green-cta-dark: #237a54;
+      --green-light: #e8f5ee;
+      --red: #c0392b;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--cs-font-base-family);
+      background: #ffffff;
+      color: var(--gray-800);
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       HEADER
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    header {
+      background: var(--teal);
+      position: relative;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 28px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 8px; flex-shrink: 0; text-decoration: none; }
+    .logo-cross { font-size: 1.2rem; color: #fff; font-weight: 900; line-height: 1; }
+    .logo-name { font-family: var(--cs-font-base-family); font-size: 1rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; }
+    .header-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.9); }
+    @media (max-width: 600px) { .header-tagline { display: none; } }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       INFO POPUP MODAL
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .kv-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .kv-modal-overlay.active { display: flex; }
+    .kv-modal-box {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 40px 44px;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+    .kv-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #555;
+      line-height: 1;
+    }
+    .kv-modal-close:hover { color: #000; }
+    .kv-modal-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .kv-modal-body p {
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .kv-modal-body p:last-child { margin-bottom: 0; }
+    .kv-modal-body strong { color: #0f1f4b; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       PAGE LAYOUT
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .page-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       ARTICLE
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    article {
+      background: var(--white);
+      box-shadow: none;
+    }
+
+    /* ── ARTICLE INNER ── */
+    .article-inner {
+      padding: 36px 32px 0;
+    }
+
+    .article-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 18px;
+    }
+    .article-category::before {
+      content: '';
+      display: inline-block;
+      width: 18px; height: 2px;
+      background: var(--teal);
+      flex-shrink: 0;
+    }
+
+    .main-headline {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.13;
+      letter-spacing: -0.025em;
+      color: var(--gray-800);
+      margin-bottom: 14px;
+    }
+
+    .article-deck {
+      font-size: 1.05rem;
+      font-style: normal;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin: 0 0 24px;
+      padding: 0;
+      background: none;
+      border-radius: 0;
+    }
+
+    .author-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 0 20px;
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 3px solid var(--gray-100);
+      margin-bottom: 32px;
+    }
+    .author-avatar {
+      width: 46px; height: 46px; border-radius: 50%;
+      background: var(--teal-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.78rem; font-weight: 800;
+      color: var(--teal-dark);
+      flex-shrink: 0;
+      overflow: hidden;
+      border: 2px solid var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-light);
+    }
+    .author-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .author-text p { font-size: 0.82rem; line-height: 1.5; color: var(--gray-600); margin: 0; }
+    .author-text .author-name { font-weight: 700; color: var(--gray-800); }
+
+    .read-this-box {
+      background: var(--gray-50);
+      border-left: 4px solid var(--teal);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .read-this-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .read-this-box p {
+      font-size: 0.97rem;
+      line-height: 1.65;
+      color: var(--gray-800);
+      font-style: italic;
+      margin: 0;
+    }
+    .read-this-box p strong { font-weight: 800; font-style: normal; }
+    .read-this-divider { height: 1px; background: var(--gray-200); margin: 0 0 28px; }
+
+    .article-main-img {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 28px;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    /* Hero image */
+    .hero-img-wrap { position: relative; overflow: hidden; }
+    .hero-img-wrap img { width: 100%; display: block; max-height: 460px; object-fit: cover; }
+    .img-placeholder {
+      background: linear-gradient(135deg, #ddd 0%, #ccc 100%);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #999; gap: 10px;
+      font-size: 0.82rem; font-weight: 600;
+    }
+    .img-placeholder svg { opacity: 0.35; }
+    .img-placeholder.hero { height: 400px; }
+    .img-placeholder.medium { height: 260px; margin: 22px 0; }
+    .img-placeholder.ba { height: 200px; }
+    .img-placeholder.product { height: 230px; }
+    .img-placeholder.thumb { height: 60px; width: 60px; }
+    .hero-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.65));
+      color: #ddd; font-size: 0.72rem; padding: 20px 20px 12px;
+    }
+
+    /* Post body */
+    .post-body { padding: 0 32px 24px; }
+    .post-body img { margin: 14px 0; }
+    .post-body p {
+      font-size: 1.05rem; line-height: 1.8;
+      color: #333; margin-bottom: 18px;
+    }
+    .post-body h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #000;
+      margin: 30px 0 14px;
+      padding: 0;
+      border: none;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      font-family: inherit;
+    }
+    .post-body h2 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #000;
+      margin: 30px 0 14px;
+      padding: 0;
+      background: none;
+      display: block;
+      letter-spacing: -0.01em;
+    }
+
+    .note-box {
+      background: var(--teal-light);
+      border-left: 4px solid var(--teal);
+      padding: 13px 18px;
+      margin: 16px 0;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: #111;
+      line-height: 1.6;
+      border-radius: 0;
+    }
+
+    .pull-quote {
+      background: var(--teal-light);
+      color: #111;
+      padding: 18px 22px;
+      margin: 22px 0;
+      border-left: 4px solid var(--teal);
+    }
+    .pull-quote::before { display: none; }
+    .pull-quote p {
+      color: #111 !important;
+      font-style: italic;
+      font-size: 0.95rem !important;
+      line-height: 1.65 !important;
+      margin: 0 !important;
+      padding-left: 0;
+    }
+    .pull-quote strong { color: #000; }
+
+    /* Score card */
+    .score-card {
+      border: 1px solid var(--gray-200);
+      background: var(--gray-100);
+      padding: 24px;
+      margin: 26px 0;
+    }
+    .score-card-title {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gray-400);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .score-card-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gray-300);
+    }
+    .score-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .score-label { font-size: 0.82rem; font-weight: 600; color: var(--gray-800); width: 155px; flex-shrink: 0; }
+    .score-bar-bg {
+      flex: 1; height: 6px;
+      background: var(--gray-300);
+      position: relative;
+    }
+    .score-bar-fill {
+      height: 100%;
+      background: var(--black);
+      transition: width 1.2s ease;
+    }
+    .score-bar-fill.gold-fill { background: var(--gold); }
+    .score-val { font-size: 0.8rem; font-weight: 800; color: var(--black); width: 32px; text-align: right; }
+    .overall-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--gray-300);
+    }
+    .big-score { font-size: 3.2rem; font-weight: 900; color: var(--black); line-height: 1; }
+    .big-score sup { font-size: 1rem; font-weight: 400; color: var(--gray-400); vertical-align: super; }
+    .score-right .stars { color: var(--gold-dark); font-size: 1.2rem; letter-spacing: 2px; }
+    .score-right .verdict { font-size: 0.85rem; font-weight: 700; color: var(--black); margin-top: 4px; }
+    .score-right .verdict-sub { font-size: 0.72rem; color: var(--gray-400); margin-top: 2px; }
+
+    /* Info grid */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--gray-200);
+      border: 1px solid var(--gray-200);
+      margin: 20px 0;
+    }
+    .info-cell {
+      background: var(--white);
+      padding: 14px 16px;
+    }
+    .info-cell-label {
+      font-size: 0.62rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-400);
+      margin-bottom: 4px;
+    }
+    .info-cell-val { font-size: 0.9rem; font-weight: 700; color: var(--black); }
+
+    /* Checklist */
+    .checklist { list-style: none; margin: 16px 0; border: 1px solid var(--gray-200); }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--gray-200);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      background: var(--white);
+    }
+    .checklist li:nth-child(even) { background: var(--gray-100); }
+    .checklist li:last-child { border-bottom: none; }
+    .chk {
+      width: 18px; height: 18px;
+      border-radius: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; flex-shrink: 0; margin-top: 1px;
+      font-weight: 800;
+    }
+    .chk.yes { background: var(--teal); color: #fff; }
+    .chk.no { background: #ddd; color: #888; }
+
+    /* Testimonial */
+    .testimonial {
+      border-left: 4px solid var(--teal);
+      background: var(--gray-100);
+      padding: 20px 22px;
+      margin: 18px 0;
+    }
+    .t-text {
+      font-size: 0.92rem;
+      font-style: italic;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+    .t-author { display: flex; align-items: center; gap: 10px; }
+    .t-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--gray-200);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 800; flex-shrink: 0;
+      overflow: hidden; border: 2px solid var(--gray-200);
+    }
+    .t-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .t-name { font-size: 0.8rem; font-weight: 700; color: var(--black); }
+    .t-stars { color: var(--gold-dark); font-size: 0.82rem; }
+    .t-date { font-size: 0.68rem; color: var(--gray-400); }
+
+    /* Before/After */
+    .ba-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--gray-200);
+      margin: 22px 0;
+      border: 1px solid var(--gray-200);
+    }
+    .ba-item { background: var(--white); }
+    .ba-label-bar {
+      padding: 7px 14px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .ba-label-bar.before { background: #222; color: #aaa; }
+    .ba-label-bar.after { background: var(--teal); color: #fff; }
+
+    .note-box strong { color: #111; }
+
+    /* CTA block */
+    .cta-block {
+      background: #1a1a1a;
+      padding: 28px 30px;
+      margin: 30px 0;
+      text-align: center;
+      border-top: 3px solid var(--teal);
+    }
+    .cta-block-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .cta-block-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 6px;
+      letter-spacing: -0.0125em;
+    }
+    .cta-block-sub {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--green-cta);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 18px 44px;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .cta-btn:hover { background: var(--green-cta-dark); transform: translateY(-1px); }
+    .cta-btn-note { font-size: 0.68rem; color: #666; margin-top: 10px; }
+
+    /* Inline CTA button */
+    .inline-cta {
+      display: block;
+      text-align: center;
+      background: var(--teal);
+      border: none;
+      border-radius: 8px;
+      padding: 16px 28px;
+      margin: 28px 0;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.01em;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 14px rgba(65,175,155,0.3);
+    }
+    .inline-cta:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .inline-cta span { font-size: 0.8rem; font-weight: 400; display: block; margin-top: 5px; color: rgba(255,255,255,0.8); }
+
+    /* Order Steps Section */
+    .order-steps-box {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 22px 26px;
+      margin: 18px 0 24px;
+    }
+    .order-steps-box p {
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+      line-height: 1.65;
+      color: #333;
+    }
+    .order-steps-box p:last-child { margin-bottom: 0; }
+
+    .order-cta-wrap {
+      text-align: center;
+      margin: 0 0 32px;
+    }
+    .order-cta-btn {
+      display: block;
+      width: 100%;
+      background: #2e9e6b;
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-decoration: none;
+      text-align: center;
+      padding: 20px 24px;
+      border-radius: 10px;
+      border: 2px solid #237a54;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.15s;
+      margin-bottom: 12px;
+    }
+    .order-cta-btn:hover { background: #237a54; transform: translateY(-1px); }
+    .order-cta-sub {
+      font-size: 0.92rem;
+      color: #444;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Trust badges row */
+    .trust-badges {
+      display: flex;
+      gap: 0;
+      margin: 24px 0;
+      border: 1px solid var(--gray-200);
+    }
+    .trust-badge {
+      flex: 1;
+      text-align: center;
+      padding: 16px 10px;
+      border-right: 1px solid var(--gray-200);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      line-height: 1.4;
+    }
+    .trust-badge:last-child { border-right: none; }
+    .trust-badge-icon { font-size: 1.5rem; display: block; margin-bottom: 6px; }
+
+    /* Trust logos */
+    .trust-logos-row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 28px 0 8px;
+      border-top: 1px solid #eee;
+    }
+    .trust-logos-row img {
+      height: 26px;
+      width: auto;
+      max-width: calc((100% - 40px) / 6);
+      object-fit: contain;
+      opacity: 0.85;
+      flex-shrink: 1;
+    }
+
+    /* Divider */
+    .post-divider { border: none; border-top: 1px solid var(--gray-200); margin: 30px 0; }
+
+    /* Tags */
+    .tags-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--gray-200); }
+    .tag {
+      background: var(--gray-100);
+      border: 1px solid var(--gray-200);
+      color: var(--gray-600);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .tag:hover { background: var(--black); color: var(--gold); border-color: var(--black); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       SIDEBAR
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .sidebar { position: sticky; top: 104px; display: flex; flex-direction: column; gap: 20px; }
+
+    .widget {
+      background: var(--white);
+      box-shadow: none; border: 1px solid #e5e5e5;
+    }
+    .widget-header {
+      background: var(--black);
+      color: var(--gold);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .widget-header::before {
+      content: '';
+      width: 3px; height: 14px;
+      background: var(--gold);
+      display: inline-block;
+    }
+    .widget-body { padding: 18px; }
+
+    /* Product widget */
+    .prod-img-box {
+      width: 100%;
+      margin-bottom: 14px;
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+    }
+    .prod-img-box img { width: 100%; display: block; }
+    .prod-name { font-size: 1rem; font-weight: 800; color: var(--black); line-height: 1.3; margin-bottom: 8px; letter-spacing: -0.0125em; }
+    .prod-stars { color: var(--gold-dark); font-size: 1rem; letter-spacing: 1px; }
+    .prod-review { font-size: 0.72rem; color: var(--gray-400); margin-bottom: 12px; }
+    .prod-price { font-size: 1.8rem; font-weight: 900; color: var(--black); line-height: 1; letter-spacing: -0.025em; }
+    .prod-price sub { font-size: 0.85rem; font-weight: 400; vertical-align: bottom; }
+    .prod-ship { font-size: 0.72rem; color: var(--green); font-weight: 600; margin: 6px 0 16px; }
+    .widget-cta {
+      display: block; width: 100%;
+      background: var(--gold);
+      color: var(--black);
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 13px;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+    .widget-cta:hover { background: #e6c355; }
+    .widget-cta-note { font-size: 0.65rem; color: var(--gray-400); text-align: center; }
+
+    /* Verdict widget */
+    .verdict-block {
+      background: var(--black);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .v-score { font-size: 2.6rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .v-label { font-size: 0.88rem; font-weight: 800; color: var(--white); }
+    .v-sub { font-size: 0.68rem; color: #666; margin-top: 3px; }
+
+    /* Mini checklist */
+    .mini-check { list-style: none; }
+    .mini-check li {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: 0.8rem;
+      color: var(--gray-800);
+    }
+    .mini-check li:last-child { border-bottom: none; }
+    .mini-check .ico { font-size: 0.85rem; flex-shrink: 0; }
+
+    /* Related posts */
+    .related-post {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .related-post:last-child { border-bottom: none; padding-bottom: 0; }
+    .rp-thumb {
+      width: 64px; height: 64px;
+      background: var(--gray-200);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .rp-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .rp-title { font-size: 0.8rem; font-weight: 700; color: var(--black); line-height: 1.35; margin-bottom: 4px; }
+    .rp-meta { font-size: 0.68rem; color: var(--gray-400); }
+    .rp-cat {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.55rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 6px;
+      margin-bottom: 4px;
+    }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FOOTER
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    footer { background: var(--gray-50); border-top: 1px solid var(--gray-200); }
+    .footer-main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 32px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-nav { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-size: 0.88rem; color: var(--gray-600); text-decoration: none; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--teal); }
+    .footer-logo-text { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .footer-logo-cross { color: var(--teal); font-size: 1.1rem; font-weight: 900; }
+    .footer-logo-name { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-800); }
+    .footer-bottom {
+      border-top: 1px dashed var(--gray-200);
+      padding: 14px 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--gray-400); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       RESPONSIVE
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    @media (max-width: 900px) {
+      .article-inner { padding: 24px 20px 0; }
+      .main-headline { font-size: 1.75rem; }
+      .post-body { padding: 0 20px 22px; }
+      .meta-right { display: none; }
+      .ba-wrap { grid-template-columns: 1fr; }
+      .info-grid { grid-template-columns: 1fr; }
+      .footer-main { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .trust-badges { flex-wrap: wrap; }
+      .trust-badge { min-width: 48%; }
+    }
+    @media (max-width: 600px) {
+      .footer-nav { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     HEADER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-wrap">
+      <span class="logo-cross">✚</span>
+      <span class="logo-name">Medi-Journal</span>
+    </a>
+    <span class="header-tagline">Ihr Gesundheitsportal</span>
+  </div>
+</header>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     INFO MODAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="kv-modal-overlay" id="kvInfoModal" onclick="if(event.target===this)this.classList.remove('active')">
+  <div class="kv-modal-box">
+    <button class="kv-modal-close" onclick="document.getElementById('kvInfoModal').classList.remove('active')" aria-label="Schließen">&#x2715;</button>
+    <div class="kv-modal-title">So testen wir</div>
+    <div class="kv-modal-body">
+      <p>Herzlich willkommen bei Medi-Journal, Ihrem vertrauenswürdigen Ratgeber für fundierte Kaufentscheidungen. Unsere Plattform ist darauf spezialisiert, durch unabhängige Tests Ihnen die besten Produkte und Dienstleistungen aus verschiedenen Branchen und Nischen vorzustellen. Unser Ziel ist es, Sie umfassend zu informieren, damit Sie Fehlkäufe vermeiden und stets die beste Wahl treffen können.</p>
+      <p>Medi-Journal finanziert sich durch Empfehlungsprämien von den Herstellern der getesteten Produkte. Dies ermöglicht uns, Ihnen detaillierte und unvoreingenommene Testberichte anzubieten, ohne dass dadurch zusätzliche Kosten für Sie entstehen.</p>
+      <p>Die Inhalte auf dieser Seite basieren auf einer redaktionellen Bewertung nach objektiven Vergleichskriterien wie z.&nbsp;B. Zusammensetzung, Besonderheiten, Anwendungsfreundlichkeit und Preis-Leistungs-Verhältnis. Dabei werden je nach Verfügbarkeit sowohl eigene Erfahrungen als auch öffentlich zugängliche Informationen der Hersteller, Onlinehändler und Kundenbewertungen berücksichtigt.</p>
+      <p>Wir bieten neben den regulären Tests auch gesponserte Beiträge an, bei denen Produkte auf speziellen Wunsch einer Firma geprüft werden. Diese sind stets als solche gekennzeichnet und beeinflussen nicht das Ergebnis der Bewertung.</p>
+      <p><strong>Disclaimer:</strong> Sollten Sie mit der Erwähnung Ihrer Marke oder Ihres Unternehmens in einem unserer Testberichte nicht zufrieden sein, bitten wir Sie, uns über die im Impressum hinterlegte E-Mail-Adresse zu kontaktieren.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     PAGE CONTENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="page-wrap">
+
+  <!-- ════════════════════════
+       MAIN ARTICLE
+  ════════════════════════ -->
+  <article>
+
+    <!-- ARTICLE HERO -->
+    <div class="article-inner">
+
+      <span class="article-category">Männergesundheit &amp; Anti-Aging</span>
+
+      <h1 class="main-headline">Tränensäcke und Augenringe bei Männern: Warum teure Augenpflegecremes alles nur schlimmer machen</h1>
+
+      <p class="article-deck">Ein Männergesundheitsspezialist enthüllt, warum Dermatologen immer wieder synthetische Augenpflegeprodukte empfehlen, die Tränensäcke, dunkle Augenringe und Falten verschlimmern — und der einzige Wirkstoff, der die Augenhaut bei Männern tatsächlich regeneriert</p>
+
+      <div class="author-row">
+        <div class="author-avatar">
+          <img src="img/eyebag-de/doctor-bauer.jpg" alt="Dr. Michael Bauer">
+        </div>
+        <div class="author-text">
+          <p>Von <span class="author-name">Dr. Michael Bauer</span>, Männergesundheit &amp; Anti-Aging-Spezialist &nbsp;·&nbsp; 4. April 2026 &nbsp;·&nbsp; 8 Min. Lesezeit</p>
+        </div>
+      </div>
+
+    </div><!-- /article-inner -->
+
+    <!-- POST BODY -->
+    <div class="post-body">
+
+      <!-- OPENING -->
+      <p>Ich arbeite seit 17 Jahren mit Männern zusammen – und ich höre immer wieder dieselbe Geschichte.</p>
+
+      <p>Ein Mann sitzt mir gegenüber, Mitte vierzig, erschöpft wirkend – aber nicht wegen der Arbeit. Er ist erschöpft davon, wie er aussieht. Dunkle, geschwollene Tränensäcke unter den Augen. Tiefe Falten, die ihn zehn Jahre älter erscheinen lassen. Eine fahle, ledrige Haut, die sich anfühlt, als ob sie ständig zieht.</p>
+
+      <p>Er war beim Dermatologen. Er hat eine teure Augenpflege-Creme gekauft – 120, 150, manchmal sogar 200 Euro. Er hat sie wochenlang gewissenhaft aufgetragen.</p>
+
+      <p>Seine Tränensäcke wurden <strong>SCHLIMMER.</strong></p>
+
+      <!-- HERO IMAGE -->
+      <img src="img/eyebag-de/main.jpg" alt="Mann mit Tränensäcken und Augenringen" class="article-main-img">
+
+      <p>Die Schwellungen unter seinen Augen nahmen zu. Die dunklen Ringe wurden tiefer. Das aufgedunsene, müde Aussehen, das ihn morgens im Spiegel anstarrte – schlimmer als je zuvor.</p>
+
+      <p>Er geht zurück zum Dermatologen. Bekommt etwas Stärkeres verschrieben. Zahlt wieder viel Geld. Der Kreislauf geht weiter.</p>
+
+      <p>Früher dachte ich, diese Männer erwarteten zu viel zu schnell.<br><br>Dann habe ich mir genau angesehen, was in den empfohlenen Produkten steckt – und mir wurde klar: Das Problem lag nicht an den Männern. Es lag an allem, was man ihnen zu verwenden empfohlen hatte.</p>
+
+      <!-- SECTION 1 -->
+      <h3>Warum teure Augenpflegecremes Tränensäcke und Augenringe bei Männern verschlimmern</h3>
+
+      <img src="img/eyebag-de/1.jpg" alt="Synthetische Augenpflege-Produkte" style="width:100%;border-radius:4px;">
+
+      <p>Was die meisten Dermatologen Ihnen nicht sagen: Die teuren Augenpflegecremes, die sie empfehlen, haben einen grundlegenden Konstruktionsfehler – sie wurden nicht entwickelt, um die Haut zu heilen. Sie wurden entwickelt, um sich gut zu verkaufen.</p>
+
+      <p>Sie basieren auf synthetischen Grundstoffen – Retinol in instabilen Verbindungen, Peptid-Cocktails aus dem Labor, Hyaluronsäure-Fragmenten, die die Haut nicht wirklich aufnehmen kann, Koffein-Extrakte, die nur oberflächlich abschwellen. Diese Produkte fühlen sich kühl und angenehm an. Sie vermarkten sich hervorragend. Doch hier ist das biologische Problem:</p>
+
+      <p><strong>Die Haut um die Augen ist die dünnste und empfindlichste am gesamten Gesicht.</strong></p>
+
+      <p>Sie ist 0,5 mm dünn – dreimal dünner als die Haut auf Ihren Wangen. Bei Männern altert dieser Bereich besonders schnell, weil die tägliche Rasur, Stress und fehlende Pflegeroutinen die Hautbarriere über Jahre hinweg geschwächt haben. Wenn synthetische Moleküle auf diese hauchdünne Haut treffen, können sie nicht eindringen – sie liegen auf der Oberfläche, blockieren die Poren und verhindern, dass die Haut sich selbst repariert.</p>
+
+      <p>Ihr Dermatologe nennt das „aktive Wirkstoffversorgung". Was er Ihnen nicht sagt: Es behandelt das Symptom, während die eigentliche Ursache der geschwollenen Tränensäcke und dunklen Augenringe vollständig ignoriert wird.</p>
+
+      <div class="pull-quote">
+        <p>„Es liegt nicht daran, dass Dermatologen Sie täuschen wollen. Es liegt daran, dass sie von einer Industrie ausgebildet wurden, die an synthetischen Augenpflegeprodukten verdient. Rindertalg – den einzigen Wirkstoff, der die Hautbarriere rund um die Augen wirklich repariert – kann man nicht patentieren."</p>
+      </div>
+
+      <p>Also erfanden Pharmaunternehmen Ersatzstoffe, für die sie 150 Euro pro 30 ml verlangen – und bildeten eine ganze Ärztegeneration darin aus, diese zu empfehlen. Für Männer mit Tränensäcken und Augenringen ist das besonders schädlich: Duftstoffe, Konservierungsstoffe und chemische Emulgatoren – die in fast allen teuren Augenpflegeprodukten enthalten sind – reizen die ohnehin empfindliche Augenpartie zusätzlich und verschlimmern die Schwellungen.</p>
+
+      <p>Das ist kein Versehen. Das ist das Geschäftsmodell.</p>
+
+      <!-- INLINE CTA 1 -->
+      <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing" target="_blank" class="inline-cta">
+        → Jetzt Verfügbarkeit der Feel1 Rindertalg Creme prüfen
+        <span>Solange der Vorrat reicht – direkt vom Hersteller</span>
+      </a>
+
+      <!-- SECTION 2 -->
+      <h3>Was Dermatologen Männern über alternde Augenhaut verschweigen</h3>
+
+      <img src="img/eyebag-de/2.jpg" alt="Natürliche Hautpflege Entdeckung" style="width:100%;border-radius:4px;">
+
+      <p>Vor fünf Jahren begann ich, eine Frage zu stellen, die offensichtlich hätte sein sollen: Wenn teure Augenpflegeprodukte für Männer empfohlen werden und die Tränensäcke und Falten sich trotzdem verschlimmern – was hat eigentlich vor diesen Produkten funktioniert?</p>
+
+      <p>Ich begann zu recherchieren, was biologisch wirklich wirkt – nicht was Kosmetikunternehmen verkaufen wollen. Was ich fand, taucht in keinem modernen Dermatologie-Lehrbuch auf:</p>
+
+      <p><strong>Rindertalg.</strong> Ja. Rinderfett.</p>
+
+      <p>Bleiben Sie kurz dabei – denn die Biochemie dahinter ist faszinierend, gerade für die Augenpartie.</p>
+
+      <p>Die Haut rund um Ihre Augen besteht aus denselben Fettsäuren wie der Rest Ihres Körpers – Palmitinsäure, Stearinsäure, Ölsäure. Diese bilden die Schutzbarriere, die Feuchtigkeit speichert, Schwellungen verhindert und Kollagen schützt. Bei Männern ab 35 bricht diese Barriere in der Augenpartie zuerst zusammen – deshalb entstehen dort zuerst die tiefen Falten, die dunklen Ringe und die schwammigen Tränensäcke.</p>
+
+      <p>Dermatologen wissen das. Aber statt Ihnen zu geben, woraus Ihre Augenhaut tatsächlich besteht, empfehlen sie synthetische Peptide, die Ihr Körper nicht erkennt und nicht aufnehmen kann.</p>
+
+      <p>Das ist der Grund, warum Ihre Haut um die Augen mit jedem Monat dünner, faltiger und schwächer wird – trotz teurer Pflegeprodukte.</p>
+
+      <p>Was alles verändert hat: <strong>Grasgefütterter Rindertalg enthält exakt dieselben Fettsäuren</strong> wie menschliche Haut – in nahezu identischen Verhältnissen. Wenn Sie Rindertalg auf die Augenpartie auftragen, erkennt Ihr Körper ihn <strong>sofort</strong>. Die Fettsäuren integrieren sich direkt in die Hautbarriere und stärken sie. Die Schwellung der Tränensäcke beginnt zu sinken. Die dunklen Augenringe hellen auf, weil die Durchblutung verbessert wird. Die Falten werden weicher, weil die Haut wieder Feuchtigkeit speichert.</p>
+
+      <p>Kein Rückstand. Kein Brennen. Kein Ziehen. Nur Regeneration.</p>
+
+      <!-- SECTION 3 -->
+      <h3>Warum Ihr Dermatologe das niemals empfehlen wird</h3>
+
+      <p>Wenn Rindertalg so wirksam ist – warum hat Ihr Dermatologe ihn nicht erwähnt, als er Ihnen diese 150-Euro-Augenpflege in die Hand drückte?</p>
+
+      <p>Zwei Gründe.</p>
+
+      <p><strong>Erstens: Pharmaunternehmen können ihn nicht patentieren.</strong> Rindertalg erfordert sorgfältige Beschaffung und Kleinchargen-Verarbeitung. Man kann ihn nicht wie Silikon-Emulsionen massenweise herstellen und mit riesigen Margen verkaufen. Es gibt keine Vertreter, die Proben in Arztpraxen verteilen. Es gibt keine bezahlten Studien, die ihn bewerben. Also empfehlen Dermatologen das, was Kosmetikunternehmen ihnen mitbringen.</p>
+
+      <p><strong>Zweitens: Es klingt seltsam.</strong> „Rinderfett unter den Augen" ist schwer zu vermarkten in einer Welt, die überzeugt wurde, dass Retinol, Peptide und Hyaluronsäure die einzigen wirksamen Inhaltsstoffe sind. Ihr Dermatologe verschweigt das nicht böswillig. Er weiß es schlicht nicht. Es stand nicht in seinem Lehrbuch.</p>
+
+      <p>Aber Ihre Augenhaut interessiert sich nicht dafür, was modern klingt. Sie interessiert sich dafür, was sie wirklich nährt.</p>
+
+      <img src="img/eyebag-de/3.jpg" alt="Arzt und Patient" style="width:100%;border-radius:4px;margin-bottom:6px;">
+
+      <!-- TESTIMONIAL -->
+      <div class="testimonial">
+        <div class="t-text">„Ich hatte seit meinen Dreißigern schwere Tränensäcke und dunkle Augenringe. Drei Dermatologen, vier verschiedene Augenpflegecremes, zweimal Retinol ausprobiert. Nichts hat nachhaltig geholfen. Nach vier Wochen Feel1 Rindertalg Creme sehen meine Augen morgens endlich ausgeruht aus – zum ersten Mal seit Jahren."</div>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Markus K."></div>
+          <div>
+            <div class="t-name">Markus K., 43 &nbsp;<span class="t-stars">★★★★★</span></div>
+            <div class="t-date">Verifizierter Käufer · Februar 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INLINE CTA 2 -->
+      <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing" target="_blank" class="inline-cta">
+        → Jetzt Verfügbarkeit der Feel1 Rindertalg Creme prüfen
+        <span>30-Tage-Geld-zurück-Garantie · Kostenloser Versand</span>
+      </a>
+
+      <!-- SECTION 4 -->
+      <h3>Warum die meisten Talg-Produkte Ihre Augenpartie nicht wirklich verbessern</h3>
+
+      <p>Hier kommt der entscheidende Teil: Nicht jeder Rindertalg ist gleich – und für die empfindliche Augenpartie ist das wichtiger als irgendwo sonst.</p>
+
+      <p>Rindertalg von getreidegemästetem Fabrikvieh ist nährstoffarm. Er enthält nicht die fettlöslichen Vitamine, die für die Regeneration der dünnen Augenhaut entscheidend sind. Das ist der Talg, den ein skeptischer Dermatologe vorschnell abtun würde – und er hätte nicht ganz unrecht, wenn er dabei an minderwertige Massenware denkt.</p>
+
+      <p>Was wirklich funktioniert, ist <strong>100% grasgefütterter Rindertalg</strong>. Rinder, die ausschließlich Gras fressen, produzieren Talg mit einem völlig anderen Nährstoffprofil: reich an den Vitaminen A, D, E und K – genau den Vitaminen, die Ihre Augenhaut für Zellerneuerung, Kollagenaufbau und Schwellungsreduktion benötigt und die in modernen Augenpflegeprodukten entweder fehlen oder in instabilen synthetischen Formen vorliegen.</p>
+
+      <p>Auch die Verarbeitung ist entscheidend. Industrielle Hitzebehandlung zerstört die wertvollen Verbindungen. Nur schonend verarbeiteter Talg aus Kleinchargen erhält seine biologische Aktivität – und damit seine Wirkung auf die Augenpartie.</p>
+
+      <p>Schließlich funktioniert reiner Talg am besten, wenn er mit komplementären natürlichen Inhaltsstoffen kombiniert wird. Die Feel1 Rindertalg Creme enthält genau vier:</p>
+
+      <img src="img/eyebag-de/4.jpg" alt="Feel1 Rindertalg Creme Inhaltsstoffe" style="width:100%;border-radius:4px;">
+
+      <ul style="list-style:none;margin:0 0 18px;padding:0;">
+        <li style="padding:10px 0;border-bottom:1px solid #eee;font-size:1rem;color:#333;line-height:1.6;"><strong>Grasgefütterter Rindertalg</strong> – bioidentisch mit den natürlichen Ölen der Augenhaut, reich an den Vitaminen A, D, E und K für tiefe Regeneration und Kollagenaufbau</li>
+        <li style="padding:10px 0;border-bottom:1px solid #eee;font-size:1rem;color:#333;line-height:1.6;"><strong>Bio-Jojobaöl</strong> – ultraleicht und schnell absorbierend, strukturell identisch mit dem natürlichen Sebum der Haut – ideal für die empfindliche Augenzone</li>
+        <li style="padding:10px 0;border-bottom:1px solid #eee;font-size:1rem;color:#333;line-height:1.6;"><strong>Sheabutter</strong> – tiefpflegend, stark entzündungshemmend, unterstützt die Reduktion von Schwellungen und Tränensäcken von innen heraus</li>
+        <li style="padding:10px 0;font-size:1rem;color:#333;line-height:1.6;"><strong>Naturhonig</strong> – antibakteriell, feuchtigkeitsbindend, hilft der dünnen Augenhaut, Wasser zu speichern und Augenringe aufzuhellen</li>
+      </ul>
+
+      <p>Vier Inhaltsstoffe. Mehr nicht. Keine Duftstoffe. Keine synthetischen Konservierungsstoffe. Keine Paraben. Keine Silikone. Nichts, das die empfindliche Augenpartie reizt oder die Schwellungen verstärkt.</p>
+
+      <!-- EARLY CTA -->
+      <div class="cta-block">
+        <div class="cta-block-label">Limitiertes Angebot</div>
+        <div class="cta-block-title">Feel1 Rindertalg Creme – Jetzt 50% günstiger</div>
+        <div class="cta-block-sub">Gegen Tränensäcke · Augenringe · Altersfalten · 4 natürliche Inhaltsstoffe · 30-Tage-Garantie</div>
+        <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing" class="cta-btn">Jetzt zum halben Preis sichern →</a>
+        <p class="cta-btn-note">Kostenloser Versand · 30-Tage-Rückgaberecht · Keine versteckten Kosten</p>
+      </div>
+
+      <!-- SECTION 5 -->
+      <h3>Was Männer mit Tränensäcken und Falten als Erstes bemerken</h3>
+
+      <img src="img/eyebag-de/5.webp" alt="Sichtbare Ergebnisse nach Anwendung" style="width:100%;border-radius:4px;">
+
+      <p>Die meisten Männer bemerken einen Unterschied innerhalb der ersten ein bis zwei Wochen – besonders morgens, wenn Tränensäcke am stärksten ausgeprägt sind.</p>
+
+      <p><strong>Erste Woche</strong> – das Spannungsgefühl um die Augen lässt nach. Die Haut fühlt sich weicher und geschmeidiger an. Die Schwellung der Tränensäcke, die sich morgens nach dem Aufwachen wie ein aufgeblasener Ballon anfühlt, beginnt spürbar abzunehmen. Die Augenhaut wirkt weniger eingefallen und ledrig.</p>
+
+      <p><strong>Woche zwei bis vier</strong> – die dunklen Augenringe beginnen sich aufzuhellen. Das liegt daran, dass die verbesserte Barrierefunktion die Mikrozirkulation in der dünnwandigen Augenhaut ankurbelt. Weniger Stauung bedeutet weniger Pigmentierung. Gleichzeitig werden die Fältchen um die Augen – die sogenannten Krähenfüße – weicher, weil die Haut wieder Feuchtigkeit speichert und nicht mehr austrocknet.</p>
+
+      <p><strong>Woche vier bis acht</strong> – das ist der Moment, in dem andere anfangen, es zu bemerken. Kollegen fragen, ob Sie gut geschlafen haben. Freunde sagen, Sie sehen ausgeruht aus. Die Tränensäcke, die früher das erste waren, was man im Spiegel sah, sind deutlich kleiner geworden. Das ist nicht Magie – das ist das Ergebnis, Ihrer Augenhaut endlich zu geben, was sie seit Jahren gebraucht hat.</p>
+
+      <p>Die teure Augencreme Ihres Dermatologen? Sie liegt auf der Oberfläche Ihrer Haut und tut biologisch nichts. Das ist der Unterschied zwischen synthetischen Peptiden, die Ihr Körper nicht erkennt, und bioidentischen Fetten, die er sofort versteht und verarbeitet.</p>
+
+      <!-- BEFORE/AFTER -->
+      <div class="ba-wrap">
+        <div class="ba-item">
+          <div class="ba-label-bar before">Vorher – Tag 1</div>
+          <img src="img/eyebag-de/before.jpg" alt="Tränensäcke und Augenringe vorher" style="width:100%;display:block;height:200px;object-fit:cover;">
+        </div>
+        <div class="ba-item">
+          <div class="ba-label-bar after">Nachher – Tag 56</div>
+          <img src="img/eyebag-de/after.jpg" alt="Reduzierte Tränensäcke nachher" style="width:100%;display:block;height:200px;object-fit:cover;">
+        </div>
+      </div>
+      <p style="font-size:0.78rem;color:#888;text-align:center;margin-top:-10px;margin-bottom:20px;">Andreas H., 47 – Anwender seit 8 Wochen</p>
+
+      <!-- INLINE CTA 3 -->
+      <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing" target="_blank" class="inline-cta">
+        → Jetzt Verfügbarkeit der Feel1 Rindertalg Creme prüfen
+        <span>Bereits über 100.000 zufriedene Kunden · 4,9 / 5 Sterne</span>
+      </a>
+
+      <!-- SECTION 6 -->
+      <h3>Das einfache Protokoll für die Augenpartie</h3>
+
+      <p>Hier ist meine Empfehlung für Männer mit Tränensäcken, Augenringen und alternder Augenhaut:</p>
+
+      <p>Verwenden Sie die Feel1 Rindertalg Creme zweimal täglich – morgens und abends. Für die Augenpartie reicht eine winzige Menge, etwa so groß wie ein halbes Centstück. Erwärmen Sie es kurz zwischen Ihren Ringfingern – der Ring­finger übt den wenigsten Druck aus, ideal für die empfindliche Augenhaut – und klopfen Sie die Creme sanft unter und neben die Augen auf. Kein Reiben, nur sanftes Eintupfen.</p>
+
+      <p>Morgens: Auftragen nach dem Gesichtwaschen, bevor Sie aus dem Haus gehen. Die Creme zieht innerhalb von zwei Minuten vollständig ein – kein fettiger Film, kein glänzendes Aussehen.</p>
+
+      <p>Abends: Auftragen nach der Rasur oder dem Gesichtwaschen. Nachts hat die Haut die höchste Regenerationsrate – das ist der Moment, in dem die bioidentischen Fettsäuren am tiefsten wirken.</p>
+
+      <p>Das Wichtigste: Konsequenz. Ihre Augenhaut hat sich nicht über Nacht verschlechtert – sie braucht 60 bis 90 Tage, um sich vollständig zu erholen. Bleiben Sie dabei.</p>
+
+      <p>Keine komplizierte Routine. Kein 10-Stufen-Programm. Kein Retinol-Irritations-Zyklus. Nur ein Produkt, 30 Sekunden, zweimal täglich – und eine Augenhaut, die endlich das bekommt, was sie braucht.</p>
+
+      <!-- SECTION 7 -->
+      <h3>Warum ich Feel1 speziell für Männer mit Augenringen und Tränensäcken empfehle</h3>
+
+      <img src="img/eyebag-de/6.jpg" alt="Feel1 Rindertalg Creme Empfehlung" style="width:100%;border-radius:4px;">
+
+      <p>Ich empfehle normalerweise keine spezifischen Marken. Aber nachdem ich alle erhältlichen Talg-Produkte auf dem Markt getestet habe – insbesondere im Hinblick auf die empfindliche Augenpartie bei Männern – empfehle ich seit über einem Jahr ausschließlich Feel1.</p>
+
+      <p>Hier ist warum:</p>
+
+      <p><strong>Sie verwenden ausschließlich grasgefütterten Rindertalg</strong> von sorgfältig ausgewählten Kleinproduzenten. Kein industrieller Talg. Kein Getreide-gefüttertes Vieh. Das macht den entscheidenden Unterschied beim Nährstoffprofil – besonders für die vitamin-hungrige, alternde Augenhaut.</p>
+
+      <p><strong>Ihre Formel enthält nur vier Inhaltsstoffe</strong> – Rindertalg, Bio-Jojobaöl, Sheabutter, Naturhonig. Nichts Synthetisches, keine Duftstoffe, keine Konservierungsstoffe. Für die Augenpartie ist das entscheidend: Jeder Reizstoff bedeutet mehr Schwellung, mehr Rötung, mehr Tränensäcke.</p>
+
+      <p><strong>Sie verstehen, dass Männerhaut biologisch anders ist.</strong> Männliche Haut ist 20–25% dicker – aber die Haut unter den Augen ist bei Männern genauso dünn wie bei Frauen und altert bei Männern oft schneller, weil sie jahrelang vernachlässigt wurde. Die Formulierung von Feel1 ist nicht-komedogen und verursacht keine Mitesser oder Ausbrüche – ein häufiges Problem bei zu reichhaltigen Balsamen im Augenbereich.</p>
+
+      <p>Ihr Dermatologe wird das nicht empfehlen. Er kann Rindertalg nicht über Ihre Krankenkasse abrechnen. Es gibt keine Pharmarep-Beziehung, keine Provision. Aber Ihre Augenhaut interessiert sich nicht für sein Geschäftsmodell. Sie interessiert sich dafür, was tatsächlich wirkt.</p>
+
+      <!-- TESTIMONIALS -->
+      <div class="testimonial">
+        <div class="t-text">„Ich bin 48 und hatte seit Jahren diese schweren Tränensäcke, die mich ständig müde und älter aussehen ließen. Kollegen haben mich gefragt, ob ich krank bin. Nach sechs Wochen Feel1 habe ich dieselben Kollegen, die mich fragen, was ich verändert habe. Ich sehe aus wie ich selbst – nur zehn Jahre jünger."</div>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Stefan R."></div>
+          <div>
+            <div class="t-name">Stefan R. &nbsp;<span class="t-stars">★★★★★</span></div>
+            <div class="t-date">Verifizierter Käufer · Januar 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="t-text">„Ich habe alles versucht: teure Augenpflegecremes, Retinol, sogar Kaffeepads unter den Augen. Nichts hat langfristig geholfen. Feel1 ist das erste Produkt, bei dem ich nach drei Wochen im Spiegel sehe, dass sich wirklich etwas verändert. Die Falten um meine Augen sind weicher, die dunklen Ringe deutlich heller."</div>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Thomas B."></div>
+          <div>
+            <div class="t-name">Thomas B. &nbsp;<span class="t-stars">★★★★★</span></div>
+            <div class="t-date">Verifizierter Käufer · Februar 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="t-text">„Mit 52 dachte ich, Tränensäcke und tiefe Falten um die Augen sind einfach unvermeidlich. Jetzt, nach zwei Monaten Feel1, sieht meine Augenhaut besser aus als mit 42. Meine Frau glaubt nicht, dass ich nur eine Creme verwende."</div>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Klaus M."></div>
+          <div>
+            <div class="t-name">Klaus M. &nbsp;<span class="t-stars">★★★★★</span></div>
+            <div class="t-date">Verifizierter Käufer · März 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 8: BOTTOM LINE -->
+      <h3>Das Fazit: Was Ihre Augenringe und Tränensäcke wirklich brauchen</h3>
+
+      <img src="img/eyebag-de/7.jpg" alt="Fazit und Ergebnis" style="width:100%;border-radius:4px;">
+
+      <p>Wenn Sie seit Jahren unter Tränensäcken leiden – wenn jede teure Augenpflegecreme nichts bewirkt hat, wenn Sie sich daran gewöhnt haben, ständig müde und älter auszusehen – dann sind nicht Sie das Problem.</p>
+
+      <p>Die Produkte sind es. Das System ist es.</p>
+
+      <p>Die Haut unter Ihren Augen ist die dünnste und empfindlichste an Ihrem gesamten Körper. Sie braucht keine synthetischen Peptide oder instabiles Retinol. Sie braucht genau das, woraus sie besteht: bioidentische Fettsäuren, die Ihre Zellen sofort erkennen und verarbeiten können.</p>
+
+      <p>Grasgefütterter Rindertalg enthält exakt diese Fettsäuren – zusammen mit den fettlöslichen Vitaminen A, D, E und K, die Ihre Augenhaut seit Jahren nicht bekommen hat. Wenn Sie ihr das geben, passiert etwas Bemerkenswertes: Die Tränensäcke schwellen ab. Die Augenringe hellen auf. Die Falten werden weicher. Nicht weil ein Marketingversprechen erfüllt wurde – sondern weil Ihre Biologie endlich bekommt, was sie braucht.</p>
+
+      <p>Sie können weiterhin Geld für synthetische Augenpflege ausgeben, die auf Ihrer empfindlichsten Haut liegt und nichts tut – dieselben Produkte, zu denen eine Industrie Ihren Dermatologen ausgebildet hat, sie zu empfehlen.</p>
+
+      <p>Oder Sie probieren etwas, das <strong>tatsächlich wirkt</strong>. Etwas, das Ihr Dermatologe Ihnen nicht empfehlen wird, weil er es nicht abrechnen kann. Aber etwas, das Ihre Augenhaut sofort erkennen wird – weil es das ist, wofür sie gemacht wurde.</p>
+
+      <p>Und hier ist das Beste: Sie gehen kein Risiko ein. Verwenden Sie Feel1 Rindertalg Creme 30 Tage lang. Wenn Ihre Augenpartie nicht besser aussieht, erhalten Sie Ihr Geld vollständig zurück – keine Fragen, kein Aufwand.</p>
+
+      <p>Sie haben bereits Geld für Augenpflegeprodukte ausgegeben, die die Dinge nicht verbessert haben. Das hier ist das Erste, das tatsächlich mit Ihrer Biologie arbeitet – nicht dagegen.</p>
+
+      <!-- TRUST BADGES -->
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🛡️</span>
+          30-Tage Geld-zurück-Garantie
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🌿</span>
+          100% Natürliche Zutaten
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🚚</span>
+          Kostenloser Versand
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">⭐</span>
+          4,9 / 5 Sterne · 1.897 Bewertungen
+        </div>
+      </div>
+
+
+    </div><!-- /post-body -->
+  </article>
+
+</div><!-- /page-wrap -->
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     BOTTOM CTA SECTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section style="background:#1a1a1a;padding:60px 20px;border-top:3px solid var(--teal);">
+  <div style="max-width:800px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;justify-content:center;">
+
+    <!-- Jar image -->
+    <div style="flex-shrink:0;">
+      <img src="https://img.funnelish.com/5973/0/1772010840-image-removebg-preview%20%2813%29.png"
+           alt="Feel1 Rindertalg Creme"
+           style="width:200px;height:auto;display:block;filter:drop-shadow(0 8px 24px rgba(65,175,155,0.25));">
+    </div>
+
+    <!-- Text + CTA -->
+    <div style="flex:1;min-width:260px;text-align:left;">
+      <div style="font-size:0.65rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">Exklusives Angebot</div>
+      <h2 style="font-size:1.8rem;font-weight:900;color:#fff;line-height:1.2;margin-bottom:10px;letter-spacing:-0.02em;">Feel1 Rindertalg Creme<br>— Jetzt 50% günstiger</h2>
+      <p style="font-size:0.95rem;color:#aaa;margin-bottom:22px;line-height:1.6;">Gegen Tränensäcke, Augenringe &amp; Falten. Nur 4 natürliche Inhaltsstoffe. 30-Tage-Geld-zurück-Garantie. Kostenloser Versand.</p>
+
+      <!-- Stars -->
+      <p style="font-size:0.9rem;color:#ddd;margin-bottom:20px;">★★★★★ &nbsp;<span style="color:#888;font-size:0.82rem;">4,9 · 1.897 Bewertungen</span></p>
+
+      <!-- Price row -->
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:22px;">
+        <span style="font-size:2.2rem;font-weight:900;color:#fff;line-height:1;">€24,99</span>
+        <span style="font-size:1rem;color:#666;text-decoration:line-through;">€49,99</span>
+        <span style="background:var(--teal);color:#fff;font-size:0.72rem;font-weight:800;padding:3px 10px;letter-spacing:0.06em;">-50%</span>
+      </div>
+
+      <a href="https://go.getfeel1.com/feel1-tallow-m-2499-0601-de/landing"
+         target="_blank"
+         style="display:inline-block;background:var(--green-cta);color:#fff;font-size:1.05rem;font-weight:800;padding:18px 40px;border-radius:4px;letter-spacing:0.02em;text-decoration:none;transition:background 0.2s;margin-bottom:12px;"
+         onmouseover="this.style.background='#237a54'" onmouseout="this.style.background='#2e9e6b'">
+        Jetzt sichern – Solange Vorrat reicht →
+      </a>
+      <p style="font-size:0.72rem;color:#555;margin:0;">🛡️ 30 Tage Rückgaberecht &nbsp;·&nbsp; 🚚 Kostenloser Versand &nbsp;·&nbsp; 🔒 Sichere Zahlung</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     FOOTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<footer>
+  <div class="footer-main">
+    <nav class="footer-nav">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">Über uns</a>
+      <a href="#">Redaktionelle Richtlinien</a>
+    </nav>
+    <div class="footer-logo-text">
+      <span class="footer-logo-cross">✚</span>
+      <span class="footer-logo-name">Medi-Journal</span>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© 2026 Medi-Journal · Ihr unabhängiges Gesundheitsportal · Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+</body>
+</html>
